@@ -51,14 +51,35 @@ logo.setAttribute("src", siteContent["nav"]["img-src"]);
 // * [ ] Note that IDs have been used on all images.  Use the IDs to update src path content
 
 let cTa = document.getElementById("cta-img");
-cTa.setAttribute("src", siteContent["nav"]["img-scr"]);
+cTa.setAttribute("src", "img/header-img.png");
+// cTa.setAttribute("src", siteContent["nav"]["img-scr"]);
 // console.log(cTa);
-
 
 // ## Task 2: Update the HTML with the JSON data
 // * [ ] Remember, NO direct updating of the HTML source is allowed.
 // * [ ] Using your selectors, update the content to match the example file.
 // * [ ] Remember to update the src attributes on images
+
+let a = document.getElementsByTagName("a");
+a[0].textContent = "Service";
+("Service");
+a[1].textContent = "Proudct";
+("Proudct");
+a[2].textContent = "Vision";
+("Vision");
+a[3].textContent = "Features";
+("Features");
+a[4].textContent = "About";
+("About");
+a[5].textContent = "Contact";
+("Contact");
+
+let sectionCta = document.getElementsByTagName("button");
+sectionCta[0].textContent = "Get started";
+// ("Get started");
+
+let sectionText = document.getElementsByTagName("h1");
+sectionText[0].textContent = "Dom Is Awesome";
 
 // ## Task 3: Add new content
 // * [ ] Change the color of the navigation text to be green.
