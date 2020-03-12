@@ -81,7 +81,57 @@ sectionCta[0].textContent = "Get started";
 let sectionText = document.getElementsByTagName("h1");
 sectionText[0].textContent = "Dom Is Awesome";
 
+let sectionMain = document.getElementsByTagName("h4");
+sectionMain[0].textContent = "Features";
+("Features");
+sectionMain[1].textContent = "About";
+("About");
+sectionMain[2].textContent = "Services";
+("Services");
+sectionMain[3].textContent = "Product";
+("Product");
+sectionMain[4].textContent = "Vision";
+("Vision");
+sectionMain[5].textContent = "Contact";
+("Contact");
+let middleImg = document.getElementById("middle-img");
+middleImg.setAttribute("src", "img/mid-page-accent.jpg");
+
+let sectionContant = document.getElementsByTagName("p");
+sectionContant[0].textContent =
+  "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+("Features");
+sectionContant[1].textContent =
+  "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+("About");
+sectionContant[2].textContent =
+  "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+("Services");
+sectionContant[3].textContent =
+  "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+("Product");
+sectionContant[4].textContent =
+  "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+("Vision");
+sectionContant[5].textContent = "123 Way 456 Street Somewhere, USA";
+("Address");
+sectionContant[6].textContent = "1 (888) 888-8888";
+("Contact");
+sectionContant[7].textContent = "sales@greatidea.io";
+("Email");
+sectionContant[8].textContent = "Copyright Great Idea! 2018";
+("Footer");
+
 // ## Task 3: Add new content
 // * [ ] Change the color of the navigation text to be green.
+let mainNav = (document.querySelectorAll("a").style.color = "green");
+// const mainHeader = document.querySelector('.main-header');
+
 // * [ ] Utilize `.appendChild()` and `.prepend()` to add two new items to the navigation system. You can call them whatever you want.
 // * [ ] Check your work by looking at the [original html](original.html) in the browser
+
+// let p = document.createElement("p");
+// document.body.appendChild(p);
+
+let newNav = document.createElement("a");
+newNav.textContent = "chat";
