@@ -81,6 +81,16 @@ sectionCta[0].textContent = "Get started";
 let sectionText = document.getElementsByTagName("h1");
 sectionText[0].textContent = "Dom Is Awesome";
 
+let newNav = document.createElement("a");
+newNav.textContent = "Chat";
+const parentElement = document.querySelector("nav");
+parentElement.appendChild(newNav);
+
+const ppAnchor = document.createElement("a");
+ppAnchor.textContent = "Call us";
+const parentPP = document.querySelector("nav");
+parentPP.prepend(ppAnchor);
+
 let sectionMain = document.getElementsByTagName("h4");
 sectionMain[0].textContent = "Features";
 ("Features");
@@ -124,7 +134,12 @@ sectionContant[8].textContent = "Copyright Great Idea! 2018";
 
 // ## Task 3: Add new content
 // * [ ] Change the color of the navigation text to be green.
-let mainNav = (document.querySelectorAll("a").style.color = "green");
+
+let mainNav = document.querySelectorAll("a ");
+mainNav.forEach(function(a) {
+  a.style.color = "green";
+});
+
 // const mainHeader = document.querySelector('.main-header');
 
 // * [ ] Utilize `.appendChild()` and `.prepend()` to add two new items to the navigation system. You can call them whatever you want.
@@ -132,6 +147,3 @@ let mainNav = (document.querySelectorAll("a").style.color = "green");
 
 // let p = document.createElement("p");
 // document.body.appendChild(p);
-
-let newNav = document.createElement("a");
-newNav.textContent = "chat";
